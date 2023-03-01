@@ -4,6 +4,7 @@ public class Producto {
 
     private Integer id;
     private String nombre;
+    private String foto;
     private String descripcion;
     private Integer cantidad;
     private Double precioUnitario;
@@ -21,7 +22,7 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Integer id, String nombre, String descripcion, Integer cantidad, Double precioUnitario, String clasificacion, String marca, String presetacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento) {
+    public Producto(Integer id, String nombre, String descripcion, Integer cantidad, Double precioUnitario, String clasificacion, String marca, String presetacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento, String foto) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -37,9 +38,10 @@ public class Producto {
         this.fechaIngreso = fechaIngreso;
         this.fechaVencimiento = fechaVencimiento;
         this.aplicaDescuento = aplicaDescuento;
+        this.foto = foto;
     }
 
-    
+
 
     public Integer getId() {
         return id;
@@ -55,6 +57,14 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getfoto() {
+        return foto;
+    }
+
+    public void setfoto(String foto) {
+        this.foto = foto;
     }
 
     public String getDescripcion() {
